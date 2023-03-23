@@ -1,0 +1,1 @@
+./telegraf --config-directory config --watch-config poll

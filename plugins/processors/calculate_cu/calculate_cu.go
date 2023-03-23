@@ -31,13 +31,10 @@ func (p *CalculateCu) Apply(in ...telegraf.Metric) []telegraf.Metric {
 				var value, _ = metric.GetField("response_2xx_count")
 
 				var ketStr = fmt.Sprintf("%v", key)
-				fmt.Println("ketStr: ", ketStr)
 				cu, existsCu := cuMapper[ketStr]
-				fmt.Println(existsCu, "==", cu)
 
 				if existsCu {
 					var totalCu = cu * int(value.(uint64))
-					fmt.Println(totalCu)
 					metric.AddField("total_cu", totalCu)
 				}
 			}

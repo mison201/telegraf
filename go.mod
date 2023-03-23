@@ -175,7 +175,7 @@ require (
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v0.35.0
 	go.opentelemetry.io/otel/sdk/metric v0.37.0
 	go.starlark.net v0.0.0-20220328144851-d1966c6b9fcd
-	golang.org/x/crypto v0.5.0
+	golang.org/x/crypto v0.6.0
 	golang.org/x/mod v0.8.0
 	golang.org/x/net v0.7.0
 	golang.org/x/oauth2 v0.5.0
@@ -199,6 +199,8 @@ require (
 	layeh.com/radius v0.0.0-20221205141417-e7fbddd11d68
 	modernc.org/sqlite v1.19.2
 )
+
+require github.com/jackc/puddle/v2 v2.2.0 // indirect
 
 require (
 	cloud.google.com/go v0.107.0 // indirect
@@ -316,7 +318,8 @@ require (
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgproto3/v2 v2.3.1 // indirect
-	github.com/jackc/pgservicefile v0.0.0-20200714003250-2b9c44734f2b // indirect
+	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
+	github.com/jackc/pgx/v5 v5.3.1
 	github.com/jackc/puddle v1.3.0 // indirect
 	github.com/jaegertracing/jaeger v1.38.0 // indirect
 	github.com/jcmturner/aescts/v2 v2.0.0 // indirect
