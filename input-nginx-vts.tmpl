@@ -1,0 +1,3 @@
+[[inputs.nginx_vts]]{{$ct := .GatewayIPs}}{{ $length := len .GatewayIPs }}
+  urls = [{{if (ge $length 0)}}{{range $index, $item := $ct}}"http://{{$item}}/__internal_status_vhost/format/json"{{if (ne (add $index 1) $length)}},{{end}}{{end}}{{end}}]
+  response_timeout = "5s"
